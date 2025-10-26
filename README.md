@@ -1,11 +1,13 @@
 # ECG LSTM + Generador WAV 8‑bit
 
-![](./imgs/simulid_ecg.png)
-
 ## Descripción
 - Proyecto con dos piezas principales:
   - Clasificación de señales ECG sintéticas con un modelo LSTM (Keras/TensorFlow).
   - Generación de un WAV mono de 8‑bit (uint8) y exportación a arreglo C (`ecg_data.h`) a partir de un ECG simulado (NeuroKit2), útil para Arduino/SimulIDE.
+  
+![](./imgs/simulid_ecg.png)
+
+
 
 ## Contenido del repo
 - `code_basic.ipynb`: Notebook que genera un dataset sintético de ECG con NeuroKit2 (clases: normal, bradicardia, taquicardia), entrena un LSTM bidireccional y reporta métricas (accuracy, F1, matriz de confusión).
