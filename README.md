@@ -1,7 +1,8 @@
 # ECG LSTM + Generador WAV 8‑bit
+En el proyecto se desarrolló un modelo de clasificación de señales ECG sintéticas usando LSTM. Luego estas señales ECG sintética lo convertimos a WAV para ser visualizado en el software SIMULIDE para posteriormente interactuar con algún sistema embebido.
 
 ## Descripción
-- Proyecto con dos piezas principales:
+- Proyecto con dos partes principales:
   - Clasificación de señales ECG sintéticas con un modelo LSTM (Keras/TensorFlow).
   - Generación de un WAV mono de 8‑bit (uint8) y exportación a arreglo C (`ecg_data.h`) a partir de un ECG simulado (NeuroKit2), útil para Arduino/SimulIDE.
   
@@ -36,6 +37,9 @@ Uso 1: Clasificación LSTM (code_basic.ipynb)
 - Parámetros principales (modificables en el notebook):
   - `N_PER_CLASS` (por defecto 100), `DURATION_S` (8 s), `FS` (200 Hz), semillas de reproducibilidad.
 - Resultado esperado (datos sintéticos): alta precisión tras ~20 épocas.
+
+![](./imgs/lstm_model.png)
+![](./imgs/metricas.png)
 
 Uso 2: Generar WAV 8‑bit + header C (gen_ecg_wav.ipynb)
 - Abrir `gen_ecg_wav.ipynb` y ejecutar la celda principal. Incluye funciones:
