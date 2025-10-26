@@ -67,4 +67,8 @@ Notas y resolución de problemas
 - Señal y utilidades de simulación: [NeuroKit2](https://neurokit2.readthedocs.io/)
 - Modelo y entrenamiento: Keras/TensorFlow
 
+### Útil
+$ pip install pip-chill
+$ pip-chill > requirements.txt
+
 Autor: Moises Meza.
