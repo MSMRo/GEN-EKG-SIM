@@ -9,7 +9,7 @@ pickleshare==0.7.5
 pip==25.2
 rfc3987-syntax==1.1.0
 seaborn==0.13.2
-tensorflow_cpu==2.20.0
+torch==2.2.0+cpu
 tinycss2==1.4.0
 torchvision==0.24.0+cpu
 tqdm==4.67.1
