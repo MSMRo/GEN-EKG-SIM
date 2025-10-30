@@ -1,4 +1,4 @@
-# ECG LSTM + Generador WAV 8‑bit
+# GENERALINO: An ECG LSTM + Generador WAV 8‑bit
 En el proyecto se desarrolló un modelo de clasificación de señales ECG sintéticas usando LSTM. Luego estas señales ECG sintética lo convertimos a WAV para ser visualizado en el software SIMULIDE para posteriormente interactuar con algún sistema embebido.
 
 ## Descripción
